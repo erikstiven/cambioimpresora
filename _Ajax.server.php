@@ -990,7 +990,7 @@ function consultar($aForm = '', $op = '')
                 $sHtml .= '<td align="right">' . number_format($minv_tot, 2) . '</td>';
                 $sHtml .= '<td align="right">' . $minv_est_minv . '</td>';
                 $sHtml .= '<td align="right">
-								<img src="' . $_COOKIE['JIREH_IMAGENES'] . 'iconos/print.png"
+								<img src="' . $_COOKIE['JIREH_IMAGENES'] . 'iconos/print24.png"
 										style="cursor: hand !important; cursor: pointer !important;"
 										onclick="javascript:vista_previa_movimiento( ' . $minv_cod . ', ' . $minv_cod_tran . ', ' . $empresa . ',  ' . $sucursal . ' );"
 										alt="Imprimir" class="print-icon print-icon--primary" />
