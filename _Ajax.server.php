@@ -993,15 +993,15 @@ function consultar($aForm = '', $op = '')
 								<img src="' . $_COOKIE['JIREH_IMAGENES'] . 'iconos/print.png"
 										style="cursor: hand !important; cursor: pointer !important;"
 										onclick="javascript:vista_previa_movimiento( ' . $minv_cod . ', ' . $minv_cod_tran . ', ' . $empresa . ',  ' . $sucursal . ' );"
-										alt="Imprimir" />
+										alt="Imprimir" class="print-icon print-icon--primary" />
 								<img src="' . $_COOKIE['JIREH_IMAGENES'] . 'iconos/print.png"
 										style="cursor: hand !important; cursor: pointer !important;"
 										onclick="javascript:vista_previa_( ' . $minv_cod . ', ' . $empresa . ',  ' . $sucursal . ' );"
-										alt="Imprimir" />
+										alt="Imprimir" class="print-icon" />
 								<img src="' . $_COOKIE['JIREH_IMAGENES'] . 'iconos/print.png"
 										style="cursor: hand !important; cursor: pointer !important;"
 										onclick="javascript:vista_previa_totales( ' . $minv_cod . ', ' . $empresa . ',  ' . $sucursal . ' );"
-										alt="Imprimir"  class="text-danger"/>
+										alt="Imprimir" class="print-icon text-danger"/>
 						  </td>';
                 $sHtml .= '<td align="center">' . $btn_eti . '</td>';
                 $sHtml .= '</tr>';

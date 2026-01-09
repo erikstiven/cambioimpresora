@@ -49,3 +49,14 @@
   padding: 4px 6px;
   border-radius: 4px;
 }
+
+.print-icon {
+  vertical-align: middle;
+}
+
+.print-icon--primary {
+  background-color: #e8f3ff;
+  border: 1px solid #3c8dbc;
+  border-radius: 3px;
+  padding: 2px;
+}
