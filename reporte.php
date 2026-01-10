@@ -201,6 +201,14 @@
             window.open(pagina, "", opciones);
         }
 
+        window.addEventListener('error', function (event) {
+            if (!event || !event.message) {
+                return;
+            }
+            alert('Error de JavaScript: ' + event.message);
+            console.error('Error de JavaScript detectado:', event);
+        });
+
         function vista_previa_movimiento(id, tran, empr, sucu) {
             var payload = {
                 serial: id,
