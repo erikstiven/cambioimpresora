@@ -990,18 +990,18 @@ function consultar($aForm = '', $op = '')
                 $sHtml .= '<td align="right">' . number_format($minv_tot, 2) . '</td>';
                 $sHtml .= '<td align="right">' . $minv_est_minv . '</td>';
                 $sHtml .= '<td align="right">
-								<img src="' . $_COOKIE['JIREH_IMAGENES'] . 'iconos/print.png"
-										style="cursor: hand !important; cursor: pointer !important;"
-										onclick="javascript:vista_previa_movimiento( ' . $minv_cod . ', ' . $minv_cod_tran . ', ' . $empresa . ',  ' . $sucursal . ' );"
+								<img src="' . $_COOKIE['JIREH_IMAGENES'] . 'iconos/printer32.png"
+										style="cursor: pointer; width: 48px; height: 48px;"
+										onclick="javascript:vista_previa_movimiento( ' . $minv_cod . ', \'' . $minv_cod_tran . '\', ' . $empresa . ',  ' . $sucursal . ' );"
 										alt="Imprimir" />
 								<img src="' . $_COOKIE['JIREH_IMAGENES'] . 'iconos/print.png"
 										style="cursor: hand !important; cursor: pointer !important;"
 										onclick="javascript:vista_previa_( ' . $minv_cod . ', ' . $empresa . ',  ' . $sucursal . ' );"
-										alt="Imprimir" />
+										alt="Imprimir" class="print-icon" />
 								<img src="' . $_COOKIE['JIREH_IMAGENES'] . 'iconos/print.png"
 										style="cursor: hand !important; cursor: pointer !important;"
 										onclick="javascript:vista_previa_totales( ' . $minv_cod . ', ' . $empresa . ',  ' . $sucursal . ' );"
-										alt="Imprimir"  class="text-danger"/>
+										alt="Imprimir" class="print-icon text-danger"/>
 						  </td>';
                 $sHtml .= '<td align="center">' . $btn_eti . '</td>';
                 $sHtml .= '</tr>';
